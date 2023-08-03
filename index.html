@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section class="containers">
+      <!-- Sidebar +++++++++++++++++++++++++++++++++-->
+      <section class="sidebars">
+        <div class="icons p-2">
+          <a href="#"
+            ><img
+              class="main-logo px-3 py-2"
+              src="./Assets/Spotify logo.png"
+              alt="logo"
+          /></a>
+          <div class="icon d-flex align-items-center px-3 py-2 my-2">
+            <img src="./Assets/Home.png" style="height: 23px" />
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: var(--white)"
+              >Home</a
+            >
+          </div>
+
+          <div class="icon d-flex align-items-center px-3 py-2 my-2">
+            <img src="./Assets/Search.png" style="height: 23px" />
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: var(--white)"
+              >Search</a
+            >
+          </div>
+          <div class="icon d-flex align-items-center px-3 py-2 my-2">
+            <img src="./Assets/Your library.png" style="height: 22px" />
+            <a
+              href="./playlist.html"
+              class="px-3"
+              style="text-decoration: none; color: var(--white)"
+              >Your Library</a
+            >
+          </div>
+          <div class="icon d-flex align-items-center px-3 py-2 my-2">
+            <span class="" style="height: 25px; width: 25px"
+              ><img
+                src="./Assets/Plus.png"
+                style="height: 25px; width: 25px"
+            /></span>
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: var(--white)"
+              >Create Playlist</a
+            >
+          </div>
+          <div class="icon d-flex align-items-center px-3 py-2 my-2">
+            <span
+              class=""
+              style="
+                height: 25px;
+                width: 25px;
+                background: linear-gradient(
+                  135deg,
+                  #4000f4 0%,
+                  #603aed 22.48%,
+                  #7c6ee6 46.93%,
+                  #979fe1 65.71%,
+                  #a2b3de 77.68%,
+                  #adc8dc 88.93%,
+                  #c0ecd7 100%
+                );
+              "
+            >
+              <img src="./Assets/heart.png" style=""
+            /></span>
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: var(--white)"
+              >Liked Songs</a
+            >
+          </div>
+          <div class="icon d-flex align-items-center px-3 py-2 my-2">
+            <span
+              class=""
+              style="height: 25px; width: 25px; background: #004638"
+            >
+              <img
+                src="./Assets/hotspot.png"
+                style="height: 12px; margin-left: 6px; scale:2.5 ;"
+              />
+            </span>
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: var(--white)"
+              >Your Episodes</a
+            >
+          </div>
+          <br />
+
+          <div class="cnt">
+            <div class="icon d-flex align-items-center py-2">
+              <a
+                href="#"
+                class="px-3"
+                style="text-decoration: none; color: var(--white)"
+                >FAV</a
+              >
+            </div>
+            <div class="icon d-flex align-items-center py-2">
+              <a
+                href="#"
+                class="px-3"
+                style="text-decoration: none; color: var(--white)"
+                >Daily Mix 1</a
+              >
+            </div>
+            <div class="icon d-flex align-items-center py-2">
+              <a
+                href="#"
+                class="px-3"
+                style="text-decoration: none; color: var(--white)"
+                >Discover Weekly</a
+              >
+            </div>
+            <div class="icon d-flex align-items-center py-2">
+              <a
+                href="#"
+                class="px-3"
+                style="text-decoration: none; color: var(--white)"
+                >Malayalam</a
+              >
+            </div>
+            <div class="icon d-flex align-items-center py-2">
+              <a
+                href="#"
+                class="px-3"
+                style="text-decoration: none; color: var(--white)"
+                >Dance / Electronix Mix</a
+              >
+            </div>
+            <div class="icon d-flex align-items-center py-2">
+              <a
+                href="#"
+                class="px-3"
+                style="text-decoration: none; color: var(--white)"
+                >EDM / Popular</a
+              >
+            </div>
+          </div>
+
+          <br />
+          <div class="icon-app icon d-flex align-items-center px-3 py-2 my-2">
+            <img src="./Assets/download.png" style="height: 23px" />
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: var(--white)"
+              >Install App</a
+            >
+          </div>
+        </div>
+      </section>
+      <!-- Sidebar +++++++++++++++++++++++++++++++++-->
+
+      <!-- Playbar +++++++++++++++++++++++++++++++++-->
+      <section class="playbar">
+        <div class="functions">
+          <div class="details">
+            <img src="./Assets/imgs/playing-img.png" />
+            <div class="name-all">
+              <f3>Dreaming On</f3>
+              <p class="m-0">NEFFEX</p>
+            </div>
+            <img src="./Assets/bx_bxs-heart.svg" style="height: 25px" />
+          </div>
+          <div class="play">
+            <div class="fun">
+              <img
+                class="fun-img"
+                src="./Assets/shuffle.png"
+              />
+              <img class="fun-img" src="./Assets/previous.png" />
+              <img
+                class="fun-img"
+                src="./Assets/gridicons_play.png"
+                style="height: 45px;
+                width: 45px;"
+              />
+              <img
+                class="fun-img"
+                src="./Assets/next.png"
+              />
+              <img class="fun-img" src="./Assets/loop.png" />
+            </div>
+            <div class="bar-time">
+              <p>2:11</p>
+              <meter style="width: 30vw" value="75" min="0" max="100"></meter>
+              <p>2:42</p>
+            </div>
+          </div>
+          <div class="extra">
+            <img
+              class="fun-img"
+              src="./Assets/microphone.png"
+            />
+            <img
+              class="fun-img"
+              src="./Assets/query-queue.png"
+            />
+            <img class="fun-img" src="./Assets/carbon_laptop.png" />
+            <img
+              class="fun-img"
+              src="./Assets/speaker-white.png"
+            />
+            <img class="ex-img" src="./Assets/volume-bar.png" />
+            <img class="ex-img" src="./Assets/strech-speaker.png" />
+          </div>
+        </div>
+        <img class="trgl" src="./Assets/Vector 1.svg" />
+        <section class="playbar-foot">
+          <img src="./Assets/speaker-black.png" style="scale: 0.7;" />
+          <p>Listening on ASUS-ROG-G531GT</p>
+        </section>
+      </section>
+      <!-- Playbar +++++++++++++++++++++++++++++++++-->
+
+
+      <!-- Main Section +++++++++++++++++++++++++++++++++-->
+      <section class="main">
+        <!-- Navbar content -->
+        <div class="navbar">
+          <div>
+            <img
+              class="p-1 mx-2"
+              src="./Assets/backward.png"
+            />
+            <img
+              class="p-1 mx-2"
+              src="./Assets/forward.png"
+            />
+          </div>
+
+          <div
+            class="d-flex text-white align-items-center justify-content-between bg-black rounded-5 px-"
+          >
+            <img src="./Assets/imgs/profile.png" alt="profile" />
+            <p class="p-2 m-0 fw-medium">Angel</p>
+            <a href="#"
+              ><img class="p-2 m-0" src="./Assets/down.png"
+            /></a>
+          </div>
+        </div>
+
+        <div class="main-body">
+          <section style="padding-inline: 20px">
+            <h3 class="text-white">Good morning</h3>
+            <div class="cards">
+              <div class="main-card1">
+                <div class="main-card1-1">
+                  <img
+                    src="./Assets/imgs/Purple-big.png"
+                    style="height: 70px; width: 65px;"
+                  />
+                </div>
+                <div class="main-card1-2 text-white d-flex align-items-center">
+                  <p class="m-0 p-2">Liked Songs</p>
+                </div>
+              </div>
+
+              <div class="main-card1">
+                <div class="main-card1-1">
+                  <img
+                    src="./Assets/imgs/man.png"
+                    style="height: 100%; width: 100%"
+                  />
+                </div>
+                <div class="main-card1-2 text-white d-flex align-items-center">
+                  <p class="m-0 p-2">Neffex Playlist</p>
+                </div>
+              </div>
+
+              <div class="main-card1">
+                <div class="main-card1-1">
+                  <img src="./Assets/imgs/KDA.png" style="height:
+                  100%; width: 100%;"">
+                </div>
+                <div class="main-card1-2 text-white d-flex align-items-center">
+                  <p class="m-0 p-2">K/ DA</p>
+                </div>
+              </div>
+
+              <div class="main-card1">
+                <div class="main-card1-1">
+                  <img
+                    src="./Assets/imgs/marshmellow.png"
+                    style="height: 100%; width: 100%"
+                  />
+                </div>
+                <div class="main-card1-2 text-white d-flex align-items-center">
+                  <p class="m-0 p-2">Dance / Electronic Mix</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section style="padding-inline: 20px; margin-top: 10px">
+            <div class="d-flex justify-content-between align-items-center">
+              <h4 class="text-white">Shows you might like</h4>
+              <a style="text-decoration: none" href="#"
+                ><p style="color: #b3b3b3">SEE ALL</p></a
+              >
+            </div>
+            <div class="cards2">
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 21.png" />
+                <h6>Weekly Motivatio...</h6>
+                <p>Ben Ina Scott</p>
+              </div>
+
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 22.png" />
+                <h6>MEDITATION SELF</h6>
+                <p>Ibn Hussain Aleen</p>
+              </div>
+
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 23.png" />
+                <h6>Words beyond act...</h6>
+                <p>Samuel Scott</p>
+              </div>
+
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+              <div class="card2">
+                <img src="./Assets/imgs/Rectangle 16.png" />
+                <h6>The Alexa Show</h6>
+                <p>Adriana Tom</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+            <!-- Main Section +++++++++++++++++++++++++++++++++-->
+    </section>
+
+    <!-- script ---------------------------------------------------------------------------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

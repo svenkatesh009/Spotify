@@ -1,0 +1,310 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&display=swap");
+
+:root {
+  --black: #000;
+  --grey: #121212;
+  --light-gray: #181818;
+  --white: #fff;
+}
+
+body {
+  height: 100vh;
+  padding: 0rem;
+  overflow: hidden;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "DM Sans", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebars {
+  flex: 0.25;
+  display: flex;
+  height: 87vh;
+  flex-direction: column;
+  background-color: var(--black);
+}
+
+.playbar {
+  position: relative;
+  height: 13vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--light-gray);
+}
+
+.playbar-foot {
+  height: 3vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: #1ed760;
+}
+
+.main {
+  flex: 0.8;
+  background: linear-gradient(
+    180deg,
+    #222 0%,
+    #1f1f1f 11.64%,
+    #171717 25.66%,
+    #161616 32.94%,
+    #151515 35.98%,
+    #131313 44.89%,
+    #121212 55.22%,
+    #121212 83.34%,
+    #121212 81.45%,
+    rgba(18, 18, 18, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.main-logo {
+  height: 60px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.icon:hover {
+  background-color: rgb(26, 26, 26);
+  border-radius: 5px;
+}
+
+.icon-app {
+  position: fixed;
+  bottom: 13vh;
+  left: 2vw;
+}
+
+.navbar {
+  cursor: not-allowed;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
+}
+
+.main-body {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.trgl {
+  position: fixed;
+  bottom: 3vh;
+  right: 195px;
+}
+
+.playbar-foot {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.playbar-foot > p {
+  margin: 0;
+  margin-right: 30px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 40px;
+  color: #000;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.functions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  gap: 15px;
+  color: #fff;
+  align-items: center;
+}
+
+.cnt {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.details > img {
+  height: 45px;
+  margin: 10px;
+}
+
+.name-all > f3 {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.name-all > p {
+  color: #b3b3b3;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 65px;
+}
+
+.fun {
+  display: flex;
+  height: 45px;
+  gap: 15px;
+  align-items: center;
+}
+
+.fun-img {
+  padding: 3px;
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+
+.fun-img:hover {
+  background-color: gray;
+}
+
+.ex-img {
+  transition: all 1s ease;
+}
+
+.ex-img:hover {
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.bar-time {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.bar-time > p {
+  color: #c4c4c4;
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.dwn {
+  width: 400px;
+  height: 5px;
+  border-radius: 2.5px;
+  background: #535353;
+}
+
+.up {
+  position: fixed;
+  right: 565px;
+  width: 300px;
+  border-radius: 2.5px;
+  height: 5px;
+  background: #c4c4c4;
+}
+
+.extra {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.playbar {
+  padding-top: 0.5vh;
+}
+
+.main-card1 {
+  margin: 10px;
+  height: 70px;
+  width: 250px;
+  display: flex;
+  border-radius: 4px;
+  background: #303030;
+}
+
+.main-card1-1 {
+  width: 25%;
+  border-radius: 4px 0px 0px 4px;
+  background: linear-gradient(
+    135deg,
+    #4000f4 0%,
+    #603aed 22.48%,
+    #7c6ee6 46.93%,
+    #979fe1 65.71%,
+    #a2b3de 77.68%,
+    #adc8dc 88.93%,
+    #c0ecd7 100%
+  );
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card2 {
+  line-height: 20px;
+  color: #fff;
+  padding: 20px 20px 0px 20px;
+  height: 250px;
+  width: 200px;
+  background-color: var(--light-gray);
+}
+
+.card2 > img {
+  width: 163px;
+  margin-bottom: 20px;
+}
+
+.card2 > h2 {
+  color: #fff;
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.card2 > p {
+  color: #b3b3b3;
+  font-size: 15px;
+  font-weight: 500;
+}

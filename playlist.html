@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="./playlist.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <section class="containers">
+      <!-- Sidebar +++++++++++++++++++++++++++++-->
+      <section class="sidebars">
+        <div class="icons p-2">
+          <a href="#"
+            ><img
+              class="main-logo px-3 py-2"
+              src="./Assets/Spotify logo.png"
+              alt="logo"
+          /></a>
+          <div class="icon d-flex align-items-center px-3 py-1 my-2">
+            <img src="./Assets/Home.png" style="height: 23px" />
+            <a
+              href="./index.html"
+              class="px-3"
+              style="text-decoration: none; color: rgb(212, 212, 212)"
+              >Home</a
+            >
+          </div>
+
+          <div class="icon d-flex align-items-center px-3 py-1 my-2">
+            <img src="./Assets/Search.png" style="height: 23px" />
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: rgb(212, 212, 212)"
+              >Search</a
+            >
+          </div>
+          <div class="icon d-flex align-items-center px-3 py-1 my-2">
+            <img src="./Assets/Your library.png" style="height: 22px" />
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: rgb(212, 212, 212)"
+              >Your Library</a
+            >
+          </div>
+          <p
+            class="px-3 my-2"
+            style="color: rgb(212, 212, 212); font-weight: 700"
+          >
+            PLALISTS
+          </p>
+          <div class="icon d-flex align-items-center px-3 py-1 my-2">
+            <span class="" style="height: 25px; width: 25px"
+              ><img src="./Assets/plus.png" style="height: 28px; width: 25px"
+            /></span>
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: rgb(212, 212, 212)"
+              >Create Playlist</a
+            >
+          </div>
+          <div class="icon d-flex align-items-center px-3 py-1 my-2">
+            <span
+              class="rounded-1"
+              style="
+                height: 25px;
+                width: 25px;
+                background: linear-gradient(
+                  135deg,
+                  #4000f4 0%,
+                  #603aed 22.48%,
+                  #7c6ee6 46.93%,
+                  #979fe1 65.71%,
+                  #a2b3de 77.68%,
+                  #adc8dc 88.93%,
+                  #c0ecd7 100%
+                );
+              "
+            >
+              <img src="./Assets/heart.png" style=""
+            /></span>
+            <a
+              href="#"
+              class="px-3"
+              style="text-decoration: none; color: rgb(212, 212, 212)"
+              >Liked Songs</a
+            >
+          </div>
+          <div class="icon">
+            <img class="imgg" src="./Assets/playlist/album-art.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- Sidebar +++++++++++++++++++++++++++++-->
+
+      <!-- Playbar +++++++++++++++++++++++++++++-->
+      <section class="playbar">
+        <div class="functions">
+          <div class="details">
+            <img src="./Assets/imgs/Rectangle 9.png" />
+            <div class="name-all">
+              <f3>Hold On</f3>
+              <p class="m-0">Justin Bieber</p>
+            </div>
+            <img src="./Assets/heart.png" style="height: 23px" />
+            <img src="./Assets/pip.png" style="height: 23px" />
+          </div>
+          <div class="play">
+            <div class="fun">
+              <img class="fun-img" src="./Assets/shuffle.png" />
+              <img class="fun-img" src="./Assets/previous.png" />
+              <img
+                class="fun-img"
+                src="./Assets/gridicons_play.png"
+                style="height: 45px; width: 45px"
+              />
+              <img class="fun-img" src="./Assets/next.png" />
+              <img class="fun-img" src="./Assets/loop.png" />
+            </div>
+            <div class="bar-time">
+              <p>0:00</p>
+              <!-- <meter style="width: 30vw;" value="75" min="0" max="100"></meter> -->
+              <img src="./Assets/big-music-bar.png" width="500px" />
+              <p>2:50</p>
+            </div>
+          </div>
+          <div class="extra d-flex px-3">
+            <img src="./Assets/list.png" alt="list" />
+            <img src="./Assets/idk.png" alt="idk" />
+            <img src="./Assets/speaker-white.png" />
+            <img src="./Assets/volume-bar.png" alt="volume-bar" />
+          </div>
+        </div>
+      </section>
+      <!-- Playbar +++++++++++++++++++++++++++++-->
+
+      <!-- Main Section +++++++++++++++++++++++++++++-->
+      <section class="main">
+        <div class="row-1">
+          <div class="ro1-col1">
+            <img src="./Assets/imgs/pop-rn.png" style="height: 220px" />
+          </div>
+          <div class="row1-col2">
+            <p style="font-weight: 700">PLAYLIST</p>
+            <h1>Pop Right Now</h1>
+            <p style="opacity: 0.699999988079071">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Rhoncus
+            </p>
+            <p>
+              <span style="font-weight: 700">Spotify</span>
+              <span style="opacity: 0.699999988079071"
+                >. 860,305 likes . 100 songs, 5 hr 5 min</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="list">
+          <div class="itmes">
+            <img src="./Assets/play.png" style="height: 5vh" />
+            <img src="./Assets/heart.png" style="height: 5vh" />
+            <img src="./Assets/more_big.png" style="scale: 0.7" />
+          </div>
+
+          <div class="tbl-hd">
+            <h3 id="H1"># TITLE</h3>
+            <h3 id="H2">ALBUM</h3>
+            <h3 id="H3">DATE ADDED</h3>
+          </div>
+          <div class="list-items">
+            <div class="list-item">
+              <div class="li-col-1">
+                <img src="./Assets/Polygon 2.png" style="height: 2vh" />
+                <img src="./Assets/imgs/Rectangle 9.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="px-3 mx-4">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <img src="./Assets/heart.png" style="height: 4vh" />
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="li-col-1">
+                <h6>2</h6>
+                <img src="./Assets/list img.png" style="height: 5vh" />
+                <p class="p-0 m-0">We're Good<br />Dua Lipa</p>
+              </div>
+              <p class="p-0 m-0">Future Nostalgia (The Moonlight Edition)</p>
+              <p class="p-0 m-0">4일 전</p>
+              <div class="li-col-4">
+                <p class="p-0 m-0">2:45</p>
+                <img src="./Assets/more_big.png" style="scale: 0.7" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Main Section +++++++++++++++++++++++++++++-->
+    </section>
+  </body>
+</html>
