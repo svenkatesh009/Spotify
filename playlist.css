@@ -335,3 +335,19 @@ body {
 .extra > img:hover {
   background-color: gray;
 }
+
+@media screen and (max-width : 420px){
+
+  .containers{
+    display: block;
+    overflow-y: auto;
+  }
+  .sidebars{
+    /* display: none; */
+    height: fit-content;
+  }
+  .playbar{
+    overflow-x: auto;
+  }
+  
+}
